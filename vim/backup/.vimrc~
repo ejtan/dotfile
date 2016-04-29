@@ -56,8 +56,8 @@ set cinkeys=0{,0},0),:,!^F,o,0,e
 
 " Set backup
 set backup
-set backupdir=~/dotfile/vim/backup
-set directory=~/dotfile/vim/swapfile
+set backupdir=~/.vim/backup
+set directory=~/.vim/swapfile
 
 " set unix as standard file type
 set ffs=unix,mac,dos
@@ -76,7 +76,7 @@ augroup vimrcEx
 augroup END
 
 " Format status line
-set statusline=\ %t\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ Line:\ %l\ \ Col:\ %c
+set statusline=\ %t\ %w\ \ CWD:\%r%{getcwd()}%h\ %=\ Line:\ %l\ \ Col:\ %c
 
 " Arrow keys are for the weak
 no <down> <Nop>

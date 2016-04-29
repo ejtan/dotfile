@@ -76,7 +76,7 @@ augroup vimrcEx
 augroup END
 
 " Format status line
-set statusline=\ %t\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ Line:\ %l\ \ Col:\ %c
+set statusline=\ %t\ %w\ \ CWD:\%r%{getcwd()}%h\ %=\ Line:\ %l\ \ Col:\ %c
 
 " Arrow keys are for the weak
 no <down> <Nop>
