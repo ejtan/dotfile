@@ -53,6 +53,9 @@ au BufRead,BufNewfile Makefile set ts=4 sw=4 noexpandtab
 " Highlight trailing whitespaces
 match ErrorMsg /\s\+\%$\@<!$/
 
+" Highlight past 80 char
+match ErrorMsg '\%>81v.\+'
+
 " Matain indent for c preprocessor
 set cinkeys=0{,0},0),:,!^F,o,0,e
 
