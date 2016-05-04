@@ -1,6 +1,8 @@
 " Written by Eric Tan
 "
 " Vim configuration
+"#EEEEEC
+"#292929
 
 " Enable highlighting and syntax
 filetype indent plugin on
