@@ -1,0 +1,7 @@
+# Directories that do not need to be tracked
+/vim/backup/
+/vim/swapfile/
+/vim/bundle/
+
+# netrwhist
+.netrwhist

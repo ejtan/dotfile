@@ -1,4 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/eric/Documents/ising/2D'
-let g:netrw_dirhist_2='/home/eric/R/x86_64-redhat-linux-gnu-library/3.2/Rdsm/examples'
