@@ -4,4 +4,4 @@
 /vim/bundle/
 
 # netrwhist
-.netrwhist
+*.netrwhist

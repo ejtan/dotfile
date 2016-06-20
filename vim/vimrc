@@ -1,7 +1,7 @@
 " Written by Eric Tan
 "
 " Vim configuration
-
+    
 " set the runtime path to include Vundle and initialize
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -56,7 +56,8 @@ au BufRead,BufNewfile Makefile set ts=4 sw=4 noexpandtab
 match ErrorMsg /\s\+\%$\@<!$/
 
 " Highlight past 80 char
-match ErrorMsg '\%>81v.\+'
+" GET MATCH 80 CHAR AND TRAILING WHITESPACE TO WORK TOGETHER LATER
+"match ErrorMsg '\%>81v.\+'
 
 " Matain indent for c preprocessor
 set cinkeys=0{,0},0),:,!^F,o,0,e
