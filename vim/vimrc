@@ -99,3 +99,8 @@ vno <down> <Nop>
 vno <up> <Nop>
 vno <left> <Nop>
 vno <right> <Nop>
+
+" Plugins with vundle
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+call vundle#end()
