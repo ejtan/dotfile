@@ -25,6 +25,9 @@ set noexrc
 " Ignore certian files
 set wildignore=*.dll,*.exe,*.o,*.obj,*.out,*.jpg,*.gif,*.png,*.pdf
 
+" Those who enable auto match brackets are assholes
+set noshowmatch
+
 " Search options
 set hlsearch
 set ignorecase
