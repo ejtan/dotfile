@@ -83,7 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias rm="rm -I"
+alias rm="rm -i"
 alias dirs="dirs -v"
 alias vi="vim"
 alias ls="ls -h --color"
