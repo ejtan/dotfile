@@ -88,4 +88,7 @@ alias dirs="dirs -v"
 alias vi="vim"
 alias ls="ls -h --color"
 
-
+# Cuda specifics
+alias nvcc="/usr/local/cuda/bin/nvcc"
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
+export PATH=$PATH:/usr/local/cuda/
