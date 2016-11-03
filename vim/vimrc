@@ -38,10 +38,10 @@ set smartcase
 set incsearch
 
 " Set tabbing
+set expandtab
 set shiftwidth=4
 set softtabstop=4
 set ts=4
-set expandtab
 set smarttab
 set cindent
 set autoindent
