@@ -95,3 +95,6 @@ export PATH=$PATH:/usr/local/cuda/
 
 # Needed to get MPICC to work for some reason
 export PATH=/usr/lib64/mpi/gcc/openmpi/bin:$PATH
+
+# Export library path to /usr/local/lib
+export LD_LIBRARY_PATH=/usr/local/lib:${LD_LIBRARY_PATH}
