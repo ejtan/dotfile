@@ -108,5 +108,10 @@ vno <right> <Nop>
 
 " Plugins with vundle
 call vundle#begin()
+
+" Plugins
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'vim-syntastic/syntastic'
+
 call vundle#end()
