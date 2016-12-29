@@ -115,3 +115,9 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'vim-syntastic/syntastic'
 
 call vundle#end()
+
+" Configuration for synatastic
+let g:syntastic_cpp_checkers = ['gcc']
+let g:syntastic_cpp_compiler = 'gcc'
+let g:syntastic_cpp_compiler_options = '-std=c++14'
+
