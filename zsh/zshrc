@@ -89,6 +89,7 @@ alias rm="rm -i"
 alias dirs="dirs -v"
 alias vi="vim"
 alias ls="ls -h --color"
+alias matlab="~/MATLAB/bin/matlab -nodesktop -nosplash -nojvm"
 
 # Cuda specifics
 alias nvcc="/usr/local/cuda/bin/nvcc"
@@ -102,6 +103,5 @@ export PATH=/usr/lib64/mpi/gcc/openmpi/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/lib:${LD_LIBRARY_PATH}
 
 # MUSICAL TERMINAL
-
 alias dubstep="echo \"main(i){for(i=0;;i++)putchar(((i*(i>>3|i>>11)&43&i>>8))^(i&i>>12|i>>4));}\" | gcc -x c - && ./a.out | aplay"
 alias house="echo \"main(i){for(i=0;;i++)putchar(((i*(i>>17|i>>9)&46&i>>3))^(i&i>>10|i>>100));}\" | gcc -x c - && ./a.out | aplay"
