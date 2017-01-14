@@ -95,7 +95,7 @@ bindsym $mod+a focus parent
 # set workspace variables
 set $workspace1 "1.  Term"
 set $workspace2 "2.   Browser"
-set $workspace3 "3.  Other"
+set $workspace3 "3.  Htop"
 set $workspace4 "4.  Other"
 set $workspace5 "5.  Other"
 set $workspace6 "6.  Other"
@@ -131,6 +131,7 @@ bindsym $mod+Shift+0 move container to workspace $workspace10
 assign [class="Firefox"] $workspace2
 assign [class="Chromium-browser"] $workspace2
 assign [class="Evince"] $workspace10
+assign [class="Gnome-terminal"] $workspace3
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -200,8 +201,10 @@ bar {
 
 }
 
-# Set Wallpaper
-exec --no-startup-id feh --bg-scale /usr/share/backgrounds/f25/default/standard/f25.png
-# Execute redshift on login
+# Startup executables
+exec --no-startup-id feh --bg-scale /home/eric/dotfile/i3/wallpaper.jpg
 exec --no-startup-id redshift
+exec gnome-terminal -e htop
+exec chromium-browser
+
 bindsym $mod+shift+x exec i3lock --color "$bg-color"
