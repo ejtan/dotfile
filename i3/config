@@ -96,12 +96,12 @@ bindsym $mod+a focus parent
 set $workspace1 "1.  Term"
 set $workspace2 "2.   Browser"
 set $workspace3 "3.   Htop"
-set $workspace4 "4.  LaTeX"
+set $workspace4 "4.  Other"
 set $workspace5 "5.  Other"
 set $workspace6 "6.  Other"
 set $workspace7 "7.  Other"
 set $workspace8 "8.  Other"
-set $workspace9 "9.  Other"
+set $workspace9 "9.  LaTeX"
 set $workspace10 "10.  PDF"
 
 # switch to workspace
@@ -132,7 +132,7 @@ assign [class="Firefox"] $workspace2
 assign [class="Chromium-browser"] $workspace2
 assign [class="Evince"] $workspace10
 assign [class="Gnome-terminal"] $workspace3
-assign [class="TexMaker"] $workspace4
+assign [class="TexMaker"] $workspace9
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
