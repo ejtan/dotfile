@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/eric/.oh-my-zsh
+  export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -107,7 +107,7 @@ alias dubstep="echo \"main(i){for(i=0;;i++)putchar(((i*(i>>3|i>>11)&43&i>>8))^ \
 alias house="echo \"main(i){for(i=0;;i++)putchar(((i*(i>>17|i>>9)&46&i>>3))^ \
     (i&i>>10|i>>100));}\" | gcc -x c - && ./a.out | aplay"
 
-# ENV var
+# Enviorment variables
 CXX=g++
 CC=gcc
 
