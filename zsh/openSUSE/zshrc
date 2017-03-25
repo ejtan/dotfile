@@ -102,6 +102,12 @@ export PATH=/usr/lib64/mpi/gcc/openmpi/bin:$PATH
 # Export library path to /usr/local/lib
 export LD_LIBRARY_PATH=/usr/local/lib:${LD_LIBRARY_PATH}
 
+# set gcc default to gcc-6
+export CXX=g++-6
+export CC=gcc--6
+alias g++=g++-6
+alias gcc=gcc-6
+
 # MUSICAL TERMINAL
 alias dubstep="echo \"main(i){for(i=0;;i++)putchar(((i*(i>>3|i>>11)&43&i>>8))^(i&i>>12|i>>4));}\" | gcc -x c - && ./a.out | aplay"
 alias house="echo \"main(i){for(i=0;;i++)putchar(((i*(i>>17|i>>9)&46&i>>3))^(i&i>>10|i>>100));}\" | gcc -x c - && ./a.out | aplay"
