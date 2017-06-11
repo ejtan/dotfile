@@ -88,7 +88,7 @@ source $ZSH/oh-my-zsh.sh
 alias rm="rm -i"
 alias dirs="dirs -v"
 alias vi="vim"
-alias ls="ls -h --color --group-directories-first"
+alias ls="ls -h --color"
 alias matlab="~/MATLAB/bin/matlab -nodesktop -nosplash -nojvm"
 
 # Cuda specifics
