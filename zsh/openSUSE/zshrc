@@ -96,17 +96,13 @@ alias matlab="~/MATLAB/bin/matlab -nodesktop -nosplash -nojvm"
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
 export PATH=$PATH:/usr/local/cuda/bin
 
-# Needed to get MPICC to work for some reason
+# Needed for MPI
 export PATH=/usr/lib64/mpi/gcc/openmpi/bin:$PATH
 
 # Export library path to /usr/local/lib
 export LD_LIBRARY_PATH=/usr/local/lib:${LD_LIBRARY_PATH}
 
-# set gcc default to gcc-6
-export CXX=g++-6
-export CC=gcc-6
-alias g++=g++-6
-alias gcc=gcc-6
+# OpenBLAS
 
 # MUSICAL TERMINAL
 alias dubstep="echo \"main(i){for(i=0;;i++)putchar(((i*(i>>3|i>>11)&43&i>>8))^(i&i>>12|i>>4));}\" | gcc -x c - && ./a.out | aplay"
