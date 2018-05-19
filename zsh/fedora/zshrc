@@ -90,8 +90,6 @@ source $ZSH/oh-my-zsh.sh
 alias rm="rm -i"
 alias dirs="dirs -v"
 alias vi="vim"
-alias ls="ls -h --color"
-alias matlab="~/MATLAB/bin/matlab -nodesktop -nosplash -nojvm"
 
 # MPI alias
 alias mpicc="/usr/lib64/mpich/bin/mpicc"
@@ -106,7 +104,3 @@ alias dubstep="echo \"main(i){for(i=0;;i++)putchar(((i*(i>>3|i>>11)&43&i>>8))^ \
     (i&i>>12|i>>4));}\" | gcc -x c - && ./a.out | aplay"
 alias house="echo \"main(i){for(i=0;;i++)putchar(((i*(i>>17|i>>9)&46&i>>3))^ \
     (i&i>>10|i>>100));}\" | gcc -x c - && ./a.out | aplay"
-
-# Enviorment variables
-export CXX=g++
-export CC=gcc
