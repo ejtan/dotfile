@@ -106,6 +106,9 @@ vno <up> <Nop>
 vno <left> <Nop>
 vno <right> <Nop>
 
+" Change update to 100 ms (for vim-gitgutter plugin)
+set updatetime=100
+
 " Plugins with vundle
 call vundle#begin()
 
@@ -114,6 +117,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'JuliaEditorSupport/julia-vim'
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()
 
