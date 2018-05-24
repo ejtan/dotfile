@@ -120,6 +120,6 @@ call vundle#end()
 " Configuration for synatastic
 let g:syntastic_cpp_checkers = ['gcc']
 let g:syntastic_cpp_compiler = '/usr/lib64/mpich/bin/mpic++'
-let g:syntastic_cpp_compiler_options = '-std=c++11'
+let g:syntastic_cpp_compiler_options = '-std=c++17'
 
 let g:syntastic_c_compiler = '/usr/lib64/mpich/bin/mpicc'
