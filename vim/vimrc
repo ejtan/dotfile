@@ -116,7 +116,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'vim-syntastic/syntastic'
-Plugin 'JuliaEditorSupport/julia-vim'
 Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()
