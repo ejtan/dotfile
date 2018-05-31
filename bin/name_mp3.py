@@ -8,14 +8,6 @@ import sys
 import re
 
 
-def get_track_number(track_data):
-    return track_data["TRCK"].text[0].split("/")[0].zfill(2)
-
-
-def get_track_title(track_data):
-    return re.sub(r"\s*/\s*", "-", track_data["TIT2"].text[0])
-
-
 def rename_files(music_dir):
     for album_dir in os.listdir(music_dir):
         album_path = os.path.join(music_dir, album_dir)
