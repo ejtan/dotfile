@@ -9,10 +9,9 @@ import re
 
 
 def rename_files(music_dir):
-    for album_dir in os.listdir(music_dir):
-        album_path = os.path.join(music_dir, album_dir)
-
-        for track in os.listdir(album_path):
+    for root, dirs, files in os.walk(music_dir):
+        album_path = root
+        for track in files:
             if track.endswith('.mp3'):
                 original_filename = os.path.join(album_path, track)
                 track_data = ID3(original_filename)
