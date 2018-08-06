@@ -91,13 +91,8 @@ alias rm="rm -i"
 alias dirs="dirs -v"
 alias vi="vim"
 
-# MPI alias
-alias mpicc="/usr/lib64/mpich/bin/mpicc"
-alias mpiCC="/usr/lib64/mpich/bin/mpicxx"
-alias mpicxx="/usr/lib64/mpich/bin/mpicxx"
-alias mpic++="/usr/lib64/mpich/bin/mpicxx"
-alias mpiexec="/usr/lib64/mpich/bin/mpiexec"
-
+# Add mpich bin to path
+export PATH="/usr/lib64/mpich/bin/:$PATH"
 
 # MUSICAL TERMINAL
 alias dubstep="echo \"main(i){for(i=0;;i++)putchar(((i*(i>>3|i>>11)&43&i>>8))^ \
