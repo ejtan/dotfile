@@ -6,6 +6,7 @@ from mutagen.id3 import ID3
 import os
 import sys
 import re
+import argparse
 
 
 def rename_files(music_dir):
@@ -31,10 +32,14 @@ def rename_files(music_dir):
 
 
 def main():
-    if len(sys.argv) == 1:
-        rename_files(os.path.expanduser("~/Music"))
-    elif len(sys.argv) == 2:
-        rename_files(sys.argv[1])
+    parser = argparse.ArgumentParser(description="Formats music files into formated filenames.")
+    parser.add_argument('dirs', metavar='directory', type=str, nargs='*',
+                        help='Input directories', default=['~/Music'])
+    args = parser.parse_args()
+
+    for music_dir in args.dirs:
+        rename_files(os.path.expanduser(music_dir))
+
 
 if __name__ == "__main__":
     main()
