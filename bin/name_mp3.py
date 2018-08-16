@@ -9,7 +9,7 @@ import re
 import argparse
 
 
-def rename_files(music_dir):
+def rename_files(music_dir, use_verbose):
     for root, dirs, files in os.walk(music_dir):
         album_path = root
         for track in files:
@@ -30,15 +30,20 @@ def rename_files(music_dir):
                 # Rename
                 os.rename(original_filename, target_filename)
 
+                if use_verbose:
+                    print("{} -> {}".format(original_filename, target_filename))
+
 
 def main():
     parser = argparse.ArgumentParser(description="Formats music files into formated filenames.")
     parser.add_argument('dirs', metavar='directory', type=str, nargs='*',
                         help='Input directories', default=['~/Music'])
+    parser.add_argument('-v', '--verbose', action='store_true',
+                        help='Show file change output. Format: old_path -> new_path')
     args = parser.parse_args()
 
     for music_dir in args.dirs:
-        rename_files(os.path.expanduser(music_dir))
+        rename_files(os.path.expanduser(music_dir), args.verbose)
 
 
 if __name__ == "__main__":
