@@ -99,3 +99,6 @@ alias dubstep="echo \"main(i){for(i=0;;i++)putchar(((i*(i>>3|i>>11)&43&i>>8))^ \
     (i&i>>12|i>>4));}\" | gcc -x c - && ./a.out | aplay"
 alias house="echo \"main(i){for(i=0;;i++)putchar(((i*(i>>17|i>>9)&46&i>>3))^ \
     (i&i>>10|i>>100));}\" | gcc -x c - && ./a.out | aplay"
+
+# add cuda path for cmake since cuda is handled by package manager
+export CUDA_TOOLKIT_ROOT_DIR=/usr/include/cuda
