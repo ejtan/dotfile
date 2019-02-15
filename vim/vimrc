@@ -28,8 +28,8 @@ set wildignore=*.dll,*.exe,*.o,*.obj,*.out,*.jpg,*.gif,*.png,*.pdf
 " Those who enable auto match brackets are assholes
 set noshowmatch
 
-" Set line at 100 char
-set colorcolumn=101
+" Set line at 120 char
+set colorcolumn=121
 
 " Search options
 set hlsearch
